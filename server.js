@@ -28,3 +28,29 @@ app.set('port', port);
 // create http server
 const server = http.createServer(app);
 server.listen(port, () => console.log(`Runnin on localhost:${port}`));
+
+
+// db.posts.insert(
+//   {
+//     title:'udacity', 
+//     url:'https://www.udacity.com/', 
+//     description:'great place to learn about python, and machine learning'
+//   })
+// db.posts.insert(
+//   {
+//     title:'udemy', 
+//     url:'https://www.udemy.com/courses', 
+//     description:'learn about many different technologies in video format'
+//   })
+// db.posts.insert(
+//   {
+//     title:'freecodecamp', 
+//     url:'https://www.freecodecamp.com/', 
+//     description:'learn javascript with great community free bootcamp style'
+//   })
+// db.posts.insert(
+//   {
+//     title:'codeschool', 
+//     url:'https://www.codeschool.com/', 
+//     description:'learn various technologies through online courses'
+//   })
