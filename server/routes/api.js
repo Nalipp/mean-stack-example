@@ -18,7 +18,7 @@ router.get('/posts', function(req, res) {
       if (err) {
         console.log('error getting the posts')
       } else {
-        console.log(users); 
+        console.log(posts); 
         res.json(posts);
       }
     })

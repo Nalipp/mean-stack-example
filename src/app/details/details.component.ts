@@ -18,6 +18,7 @@ export class DetailsComponent implements OnInit {
     this.router.params.subscribe((params) => { 
 
     let id = params['id'];
+
     this._postService.getPost(id)
       .subscribe(res=> this.post = res);
     })

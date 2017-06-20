@@ -9,20 +9,20 @@ import { Post } from '../post';
 })
 export class HomeComponent implements OnInit {
 
-  // posts: Array<Post> = [
-  //   {_id: 'aaa', title: 'string', url: 'string', description: 'string'},
-  //   {_id: 'aaa', title: 'string', url: 'string', description: 'string'},
-  //   {_id: 'aaa', title: 'string', url: 'string', description: 'string'},
-  //   {_id: 'aaa', title: 'string', url: 'string', description: 'string'}
-  // ];
+  posts: Array<Post> = [
+    {_id: 'aaa', title: 'string', url: 'string', description: 'string'},
+    {_id: 'aaa', title: 'string', url: 'string', description: 'string'},
+    {_id: 'aaa', title: 'string', url: 'string', description: 'string'},
+    {_id: 'aaa', title: 'string', url: 'string', description: 'string'}
+  ];
 
-  posts: Array<Post>;
+  // posts: Array<Post>;
 
-  constructor(private _postService: PostService) { }
+  // constructor(private _postService: PostService) { }
 
   ngOnInit() {
-    this._postService.getPosts()
-      .subscribe(res=> this.posts = res);
+    // this._postService.getPosts()
+    //   .subscribe(res=> this.posts = res);
   }
 
 }
